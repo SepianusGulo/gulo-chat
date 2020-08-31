@@ -113,11 +113,12 @@ export default {
 <style scoped>
 .container {
   background-image: url("../assets/bg11.png");
-  background-size: center;
+  background-size: left;
   background-size: cover;
+  background-size: 1090px;
   background-repeat: no-repeat;
   width: 100%;
-  max-height: 500px;
+  max-height: 1900px;
 }
 .d-block {
   max-width: 100%;
