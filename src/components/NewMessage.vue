@@ -2,7 +2,7 @@
   <div class="container chat">
     <div class="row">
       <form @submit.prevent="addMessage">
-        <div class="mb-3 row mt-2">
+        <div class="mb-3 row" style="bg-white">
           <label for="new-message" class="text-left mb-3 col-sm-4">New Message (enter new chat)</label>
           <div class="col-sm-8">
             <input
@@ -54,3 +54,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.container {
+  background-color: #fff;
+}
+</style>

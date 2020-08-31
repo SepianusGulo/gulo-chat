@@ -2,6 +2,42 @@
   <div class="container chat">
     <div class="row">
       <h2>Codingku Aplikasi Chat</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/bg9.png" class="d-block w-100" alt="../assets/bg1.png" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/bg7.png" class="d-block w-100" alt="../assets/bg2.png" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/bg6.png" class="d-block w-100" alt="../assets/bg4.png" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <div class="col-md-12 text-center">
         <div class="card">
           <div class="card-body">
@@ -61,17 +97,22 @@ export default {
 </script>
 
 <style scoped>
+.d-block {
+  width: 100%;
+  max-height: 400px;
+}
 .card {
   max-height: 500px;
 }
 .chat h2 {
   font-size: 2.6em;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .chat span {
   font-size: 1em;
   padding: 10px;
   text-align: center;
+  color: black;
 }
 .chat .time {
   display: block;
@@ -80,14 +121,18 @@ export default {
 .messages {
   max-height: 300px;
   overflow: auto;
+  background: rgb(95, 126, 151);
 }
 .messages::-webkit-scrollbar {
   width: 3px;
 }
 .messages::-webkit-scrollbar-track {
-  background: #ddd;
+  background: rgb(247, 102, 5);
 }
 .messages::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: rgb(192, 191, 189);
+}
+img {
+  width: 100%;
 }
 </style>
